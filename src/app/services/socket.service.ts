@@ -10,7 +10,7 @@ export class SocketService {
   private typingTimeout: any;
 
   constructor() {
-    this.socket = io('http://localhost:3000');
+    this.socket = io('https://expresssocket-2.onrender.com');
   }
 
   onConnected(): Observable<string> {
