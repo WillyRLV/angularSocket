@@ -14,6 +14,8 @@
     <em>{{ typingClient }} is typing...</em>
   </div>
 
+  <button (click)="setParams()">Setear</button>
+
   <input [(ngModel)]="newMessage" placeholder="Enter your message" (input)="onTyping()" />
   <button (click)="sendMessage()">Send</button>
 </div>
